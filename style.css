@@ -4,7 +4,132 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 :root {
   font-size: 62.5%;
-  
+  font-family: 'Lato', sans-serif;
+
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 7.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+}
+
+header nav {
+  padding-right: 4rem;
+}
+header nav ul {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 1.6rem;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo img {
+  width: fit-content;
+  height: 4rem;
+
+}
+
+body {
+  margin: 7.5rem 4rem;
+  background: #eee;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+}
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+
+#hero > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#hero > div h1 {
+  font-size: 4.4rem;
+  line-height: 4.6rem;
+}
+
+#hero > div p {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  gap: 2rem;
+}
+
+#form input {
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+}
+
+#form input:last-child {
+  border-radius: 9999px;
+  width: fit-content;
+  background: #F1C40F;
+  border: none;
+}
+
+#qualities {
+  height: 11.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.quality-wrapper {
+  display: flex;
+  font-size: 1.6rem;
+  gap: 6rem;
+  align-items: center;
+}
+
+.quality-wrapper div {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
+.quality-wrapper h3 {
+  font-size: 2.2rem;
+}
+.quality-wrapper i svg {
+  width: auto;
+  height: 4.8rem;
+  fill: darkorange;
+  margin: 1rem;
 }
